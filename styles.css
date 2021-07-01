@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --razer: #65b832;
+}
+li, a, .show-btn{
+    font-family: "quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
+
+}
+
+.logo {
+    cursor: pointer;
+    background-color: black;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 10px 30px;
+    
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.show-btn {
+    padding: 9px 30px;
+    border: solid 1px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.show-btn:hover {
+    background-color: var(--razer);
+}
+
+
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 410px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    color: black;
+}
+
+.container .text {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.container form {
+    margin-top: -20px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.container form .data {
+    height: 45px;
+    width: 100%;
+    margin: 80px 0;
+    color: rgb(0, 0, 0);
+}
+
+
+form .data input {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 20px;
+    border: 0.5px solid rgb(177, 177, 177);
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+}
+
+form .btn {
+    margin: 30px 0;
+    height: 65px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+form .btn .inner  {
+    margin: 30px 0;
+    height: 45px;
+    position: absolute;
+    left: -100%;
+    background: rgb(255, 255, 255);
+    z-index: -1;
+}
+
+.button2 {
+    background-color: grey;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+.button2:hover {
+    background-color: #65b832;
+}
+
+form .button2 {
+    height: 100%;
+    width: 100%;
+}
+
+#show:checked ~ .container {
+    display: block;
+}
+
+.container .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: grey;
+}
+
+/* icon social */
+.sci {
+    z-index: 2;
+    display: flex;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 45px;
+    color: var(--razer);
+    cursor: pointer;
+}
+.bxl-facebook-circle:hover {
+    -ms-transform: scaleY(1.2);
+    transform: scaleY(1.2);
+    transform: translateX(20px);
+}
+.bxl-instagram-alt:hover {
+    -ms-transform: scaleY(1.2);
+    transform: scaleY(1.2);
+    transform: translateX(20px);
+}
+
+.bxl-youtube:hover {
+    -ms-transform: scaleY(1.2);
+    transform: scaleY(1.2);
+    transform: translateX(20px);
+}
+ 
+.bxl-twitter:hover {
+    -ms-transform: scaleY(1.2);
+    transform: scaleY(1.2);
+    transform: translateX(20px);
+}
+ 
+/* banner */
+.banner {
+    width: 100%;
+    height: 100%;
+}
+/* Titile for collection */
+.title {
+    font-size: 50px;
+    margin: 80px;
+    text-align: center;
+    font-family: "suez One";
+}
+
+.title > p {
+    font-family: "quicksand";
+    font-weight: 500;
+    font-size: 30px;
+}
+/* end title collection */
+/* card production */
+.grid {
+    margin: 150px 500px 150px 650px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.grid > article {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: gray;
+    border-radius: 20px;
+    text-align: center;
+    transform: transfrom .3s;
+    width: 500px;
+    height: 750px;
+    box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+    width: 500px;
+    height: 500px;
+}
+
+article:hover {
+    transform: rotate(2deg) scale(1.1);
+
+}
+
+.text {
+    padding: 0 20px 20px;
+}
+
+.text > h3 {
+    font-size: 25px;
+}
+
+.text > p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.text > button {
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.text > p {
+    font-size: 24px;
+    padding: 20px;
+}
+.text > button:hover {
+    -ms-transform: scaleY(1.1); 
+    transform: scale(1.1);
+    background-color: #65b832;
+}
+
+/* end card production */
+
+/* Video */
+.video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Col 2 Product grid */
+
+.col2 {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    grid-gap: 15px;
+    margin: 0 30%;
+}
+
+.col2 > .item1 {
+    grid-column: 1/3;
+    grid-row: 1/1;
+    cursor: pointer;
+}
+
+.col2 > .item2 {
+    grid-column: 1/1;
+    grid-row: 2/2;
+    cursor: pointer;
+}
+
+.col2 > .item3 {
+    grid-column: 2/2;
+    grid-row: 2;
+    cursor: pointer;
+}
+
+.col2 > .item4 {
+    grid-column: 3;
+    grid-row: 1/3;
+    cursor: pointer;
+    
+}
+
+.col2 .item1:hover{
+    transform: scale(1.1);
+}
+
+.col2 .item2:hover{
+    transform: scale(1.1);
+}
+
+.col2 .item3:hover{
+    transform: scale(1.1);
+}
+
+.col2 .item4:hover{
+    transform: scale(1.1);
+}

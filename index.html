@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Đồ cho Game Thủ đây</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/Razer logo.png" alt="Razer logo" class="logo">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+            </ul>
+        </nav>
+        <button class="show-btn" onclick="popup()"> Login </button>
+        
+    </header>
+
+    <!-- Pop up login-->
+    <div class="container">
+        <div class="text">Chào mừng bạn!</div>
+        <form action="#">
+            <div class="data">
+                <label>Nhập Email hoặc ID</label>
+                <br>
+                <input type="type" required>
+            </div>
+            <div class="data">
+                <label>Nhập mật khẩu của bạn</label>
+                <br>
+                <input type="password" required>
+            </div>
+            <div class="data">
+                <label>Nhập ngày sinh:</label>
+                <br>
+                <input type="type" placeholder="xx/yy/zzzz" required>
+            </div>
+            <div>
+                <label>Giới tính của bạn:</label>
+                <input type="radio" name="gender" value="Nam"> Nam
+                <input type="radio" name="gender" value="Nữ"> Nữ
+            </div>
+            <div class="btn">
+                <div class="inner"></div>
+                <button name="submit" class="button2" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Social icon-->
+
+    <div class="sci">
+        <i class="bx bxl-facebook-circle"></i>
+        <i class="bx bxl-instagram-alt"></i>
+        <i class="bx bxl-youtube"></i>
+        <i class="bx bxl-twitter"></i>
+    </div>
+
+    <!--Banner-->
+    <div>
+        <img src="img/banner 2.jpg" class="banner" alt="Banner gear">
+    </div>
+    <!-- card product -->
+    <div h2 class="title">Razer CES 2021 Concept</h2>
+        <p>Let your gaming do the talking, and let your style speak for itself.
+            <br>Clean, crisp, contemporary—this is the new, 
+            <br>expanded Razer Mercury White collection.</p>
+    </div>
+    <div class="grid">
+        <!--Product 1-->
+        <article>
+            <img src="img/product 1.png" alt="Razer Kraken Kitty">
+            <div class="text">
+                <h3>Razer Kraken Kitty Chroma Quartz</h3>
+                <p>Led RGB Chroma 16.8 triệu màu,<br>bao gồm cả phần tai mèo</p>
+                <button>Mua ngay</button>
+            </div>
+        </article>
+        <!-- Product 2-->
+        <article>
+            <img src="img/product 1.png" alt="Razer Kraken Kitty">
+            <div class="text">
+                <h3>Razer Kraken Kitty Chroma Quartz</h3>
+                <p>Led RGB Chroma 16.8 triệu màu,<br>bao gồm cả phần tai mèo</p>
+                <button>Mua ngay</button>
+            </div>
+        </article>
+        <!-- Product 3-->
+        <article>
+            <img src="img/product 1.png" alt="Razer Kraken Kitty">
+            <div class="text">
+                <h3>Razer Kraken Kitty Chroma Quartz</h3>
+                <p>Led RGB Chroma 16.8 triệu màu,<br>bao gồm cả phần tai mèo</p>
+                <button>Mua ngay</button>
+            </div>
+        </article>
+    </div>
+
+    <!--Video-->
+    <Div>
+        <video class="video" autoplay muted loop>
+        <source src="video/Razer BlackWidow V3 Mini HyperSpeed_1080p.mp4">
+    </video>
+    </Div>
+
+<!-- product card grid layout -->
+<div class="col2">
+    <div class="item1">
+        <img src="img/layout 1.jpg" alt="Razer keyboard">
+    </div>
+    <div class="item2">
+        <img src="img/layout 2.jpg" alt="Razer keyboard">
+    </div>
+    <div class="item3">
+        <img src="img/layout 3.jpg" alt="Razer keyboard">
+    </div>
+    <div class="item4">
+        <img src="img/layout 4.jpg" alt="Razer keyboard">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
